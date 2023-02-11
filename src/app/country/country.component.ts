@@ -9,6 +9,7 @@ export class CountryComponent {
   sectionId: string = 'countriesDivision';
   headerTitle: string = 'List of Countries';
   hideCountriesList: boolean = false;
+  showTableBorder: boolean = true;
 
   countriesList = [
     {

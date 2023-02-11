@@ -6,3 +6,27 @@
     </li>
   </ul>
 </div>
+
+<div>
+  <table [ngClass]="{ changeTableBorder: showTableBorder }">
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Country</th>
+        <th>Continent</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="let country of countriesList; let i = index"
+        [ngStyle]="{
+          backgroundColor: country.country === 'India' ? 'pink' : 'grey'
+        }"
+      >
+        <td>{{ i + 1 }}</td>
+        <td>{{ country.country }}</td>
+        <td>{{ country.continent }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
