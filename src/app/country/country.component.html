@@ -1,0 +1,8 @@
+<div id="{{ sectionId }}" [hidden]="hideCountriesList">
+  <p>{{ headerTitle }}</p>
+  <ul>
+    <li *ngFor="let country of countriesList">
+      {{ country.country }} - {{ country.continent }}
+    </li>
+  </ul>
+</div>
