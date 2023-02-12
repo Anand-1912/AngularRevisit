@@ -10,6 +10,12 @@ export class CountryComponent {
   headerTitle: string = 'List of Countries';
   hideCountriesList: boolean = false;
   showTableBorder: boolean = true;
+  flagColorOfUSA: string = 'blue';
+
+  colors: Object = {
+    color: 'red',
+    fontWeight: 'bold',
+  };
 
   countryInfo: Object = {
     'text-bold': true,
