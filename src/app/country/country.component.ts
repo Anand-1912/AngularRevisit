@@ -11,6 +11,13 @@ export class CountryComponent {
   hideCountriesList: boolean = false;
   showTableBorder: boolean = true;
 
+  countryInfo: Object = {
+    'text-bold': true,
+    'text-italic': true,
+    'text-underlined': true,
+    'text-green': true,
+  };
+
   countriesList = [
     {
       country: 'India',

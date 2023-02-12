@@ -2,3 +2,19 @@
   border: 2px solid salmon;
   border-radius: 2px;
 }
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-underlined {
+  text-decoration: underline;
+}
+
+.text-green {
+  color: green;
+}
