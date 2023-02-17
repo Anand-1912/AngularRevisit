@@ -11,6 +11,7 @@ export class CountryComponent {
   hideCountriesList: boolean = false;
   showTableBorder: boolean = true;
   flagColorOfUSA: string = 'blue';
+  hideCountriesTable: boolean = true;
 
   colors: Object = {
     color: 'red',
@@ -38,4 +39,9 @@ export class CountryComponent {
       continent: 'Europe',
     },
   ];
+
+  ShowOrHideCountriesTable(event: Event) {
+    console.log(event);
+    this.hideCountriesTable = !this.hideCountriesTable;
+  }
 }

@@ -12,7 +12,11 @@
 <p [style.color]="flagColorOfUSA">USA is an North American country</p>
 <p [ngStyle]="colors">UK is in Europe</p>
 
-<div>
+<button (click)="ShowOrHideCountriesTable($event)">
+  Show/Hide Countries Table
+</button>
+
+<div [hidden]="!hideCountriesTable">
   <table [ngClass]="{ changeTableBorder: showTableBorder }">
     <thead>
       <tr>
